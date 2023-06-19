@@ -5,5 +5,9 @@
   "item.gyroswogartifacts.soul_scythe": "Soul Scythe",
   "item.gyroswogartifacts.demonic_sword": "Demonic Sword",
   "item.gyroswogartifacts.demonic_longsword": "Demonic Longsword",
-  "item.gyroswogartifacts.broken_angelic_greatsword": "Broken Angelic Greatsword"
+  "item.gyroswogartifacts.broken_angelic_greatsword": "Broken Angelic Greatsword",
+  "item.gyroswogartifacts.iron_blade": "Iron Blade",
+  "item.gyroswogartifacts.emerald_blade": "Emerald Blade",
+  "sounds.gyroswogartifacts.demonic_longsword_shrink": "Demonic longsword shrinks.",
+  "sounds.gyroswogartifacts.demonic_sword_grow": "Demonic sword grows."
 }

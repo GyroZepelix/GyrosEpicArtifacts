@@ -1,6 +1,7 @@
 package com.gyro.gyroswogartifacts;
 
 import com.gyro.gyroswogartifacts.item.ModItems;
+import com.gyro.gyroswogartifacts.sound.ModSounds;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -26,6 +27,7 @@ public class GyrosWogArtifacts {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::setup);
 

@@ -1,105 +1,19 @@
 {
-
-  "loader": "forge:separate-perspective",
-
-  "base":
-
-  {
-
-    "loader": "forge:obj",
-
-    "model": "epicfight:models/item/obj/spear.obj",
-
-    "flip-v": true,
-
-    "materialLibraryOverride": "netherite_spear.mtl",
-
-    "display":
-
-    {
-
-      "thirdperson_righthand":
-
-      {
-
-        "translation": [6, -10.5, 6.8],
-
-        "rotation": [86, 0, 0],
-
-        "scale": [0.75, 0.75, 0.75]
-
-      },
-
-      "firstperson_righthand":
-
-      {
-
-        "translation": [10,-1,-5],
-
-        "rotation": [75,0,0],
-
-        "scale": [0.45, 0.45, 0.45]
-
-      }
-
-    }
-
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "gyroswogartifacts:item/soul_scythe"
   },
-
-  "perspectives":
-
-  {
-
-    "ground":
+  "display": {
+    "thirdperson_righthand":
 
     {
 
-      "parent": "item/generated",
+      "scale": [2, 2, 0.8],
 
-      "textures":
+      "translation": [0.0, 5.0, -1.0],
 
-      {
-
-        "layer0": "epicfight:item/netherite_spear"
-
-      }
-
-    },
-
-    "gui":
-
-    {
-
-      "parent": "item/generated",
-
-      "textures":
-
-      {
-
-        "layer0": "epicfight:item/netherite_spear"
-
-      },
-
-      "gui_light": "front"
-
-    },
-
-    "fixed":
-
-    {
-
-      "parent": "item/generated",
-
-      "textures":
-
-      {
-
-        "layer0": "epicfight:item/netherite_spear"
-
-      }
+      "rotation": [42.0, 90.0, 0.0]
 
     }
-
   }
-
 }

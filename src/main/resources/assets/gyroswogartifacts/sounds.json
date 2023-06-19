@@ -1,0 +1,16 @@
+{
+  "demonic_sword_grow": {
+    "category":"master",
+    "subtitles": "sounds.gyroswogartifacts.demonic_sword_grow",
+    "sounds": [
+      "gyroswogartifacts:demonic_sword_grow"
+    ]
+  },
+  "demonic_longsword_shrink": {
+    "category":"master",
+    "subtitles": "sounds.gyroswogartifacts.demonic_longsword_shrink",
+    "sounds": [
+      "gyroswogartifacts:demonic_longsword_shrink"
+    ]
+  }
+}
