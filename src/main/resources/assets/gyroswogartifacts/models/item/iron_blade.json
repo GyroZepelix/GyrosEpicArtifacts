@@ -1,9 +1,8 @@
 {
-	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "quickblade",
-		"particle": "quickblade"
+		"0": "gyroswogartifacts:item/iron_blade",
+		"particle": "gyroswogartifacts:item/iron_blade"
 	},
 	"elements": [
 		{
@@ -141,19 +140,23 @@
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [90.75, 0, -90],
-			"translation": [-0.5, -2.5, 1.25]
+			"translation": [-0.5, -2.5, 1.25],
+			"scale": [0.74219, 0.74219, 0.74219]
 		},
 		"thirdperson_lefthand": {
-			"rotation": [90.75, 0, -90],
-			"translation": [-0.5, -2.5, 1.25]
+			"rotation": [88.66, -1.58, 90],
+			"translation": [-0.5, -2.5, 1.25],
+			"scale": [0.74219, 0.74219, 0.74219]
 		},
 		"firstperson_righthand": {
 			"rotation": [90.75, 0, -90],
-			"translation": [2, -2.5, -0.25]
+			"translation": [-0.5, -2.5, 1.25],
+			"scale": [0.74219, 0.74219, 0.74219]
 		},
 		"firstperson_lefthand": {
-			"rotation": [90.75, 0, -90],
-			"translation": [2, -2.5, -0.25]
+			"rotation": [88.66, -1.58, 90],
+			"translation": [-0.5, -2.5, 1.25],
+			"scale": [0.74219, 0.74219, 0.74219]
 		},
 		"ground": {
 			"translation": [0, 0, 10.5]

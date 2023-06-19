@@ -10,8 +10,8 @@ import java.util.function.Supplier;
 
 public enum ArtifactItemTier implements Tier {
 
-    GREAT_SOUL(4, 2031, 9.0F, 4.0F, 15, () -> {
-        return Ingredient.of(Items.NETHERITE_INGOT);
+    GREAT_SOUL(4, 2031, 9.0F, 5.0F, 15, () -> {
+        return Ingredient.of(Items.NETHER_STAR);
     });
 
     private final int harvestLevel;
