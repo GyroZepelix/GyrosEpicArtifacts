@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "gyroswogartifacts:item/demonic_scimitar"
+  }
+}

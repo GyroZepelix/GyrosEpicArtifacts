@@ -9,5 +9,9 @@
   "item.gyroswogartifacts.iron_blade": "Iron Blade",
   "item.gyroswogartifacts.emerald_blade": "Emerald Blade",
   "sounds.gyroswogartifacts.demonic_longsword_shrink": "Demonic longsword shrinks.",
-  "sounds.gyroswogartifacts.demonic_sword_grow": "Demonic sword grows."
+  "sounds.gyroswogartifacts.demonic_sword_grow": "Demonic sword grows.",
+  "item.gyroswogartifacts.blood_greataxe": "Blood Greataxe",
+  "item.gyroswogartifacts.blood_mace": "Blood Mace",
+  "item.gyroswogartifacts.blood_scythe": "Blood Scythe",
+  "item.gyroswogartifacts.blood_flamberg": "Blood Flamberg"
 }

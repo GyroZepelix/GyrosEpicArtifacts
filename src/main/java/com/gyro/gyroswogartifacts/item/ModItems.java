@@ -2,6 +2,7 @@ package com.gyro.gyroswogartifacts.item;
 
 import com.gyro.gyroswogartifacts.sound.ModSounds;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -26,35 +27,49 @@ public class ModItems {
             () -> new GreatswordItem(new Item.Properties()
                     .tab(ARTIFACTS_TAB).fireResistant().setNoRepair(),
                     ArtifactItemTier.GREAT_SOUL));
-
     public static final RegistryObject<SwordItem> SOUL_SCYTHE = ITEMS.register("soul_scythe",
             () -> new SwordItem(ArtifactItemTier.GREAT_SOUL, 0, -1.8F,
                     new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair()
                     ));
-
-    public static final RegistryObject<MorphingSwordItem> DEMONIC_SWORD = ITEMS.register("demonic_sword",
-            () -> new MorphingSwordItem(NETHERITE, 3, -2.35F,
+    public static final RegistryObject<GreatswordItem> BLOOD_GREATAXE = ITEMS.register("blood_greataxe",
+            () -> new GreatswordItem(new Item.Properties()
+                    .tab(ARTIFACTS_TAB).fireResistant().setNoRepair(),
+                    ArtifactItemTier.GREAT_SOUL));
+    public static final RegistryObject<GreatswordItem> BLOOD_MACE = ITEMS.register("blood_mace",
+            () -> new GreatswordItem(new Item.Properties()
+                    .tab(ARTIFACTS_TAB).fireResistant().setNoRepair(),
+                    ArtifactItemTier.GREAT_SOUL));
+    public static final RegistryObject<SwordItem> BLOOD_SCYTHE = ITEMS.register("blood_scythe",
+            () -> new SwordItem(ArtifactItemTier.GREAT_SOUL, 0, -1.8F,
                     new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair()
             ));
-
-    public static final RegistryObject<MorphingSwordItem> DEMONIC_LONGSWORD = ITEMS.register("demonic_longsword",
-            () -> new MorphingSwordItem(ArtifactItemTier.GREAT_SOUL, 4, -2.8F,
-                    new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair()
-            ));
-
-
-    public static final RegistryObject<SwordItem> BROKEN_ANGELIC_GREATSWORD = ITEMS.register("broken_angelic_greatsword",
+    public static final RegistryObject<SwordItem> DEMONIC_SCIMITAR = ITEMS.register("demonic_scimitar",
             () -> new SwordItem(NETHERITE, 3, -2.35F,
                     new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair()
+            ));
+    public static final RegistryObject<MorphingSwordItem> DEMONIC_SWORD = ITEMS.register("demonic_sword",
+            () -> new MorphingSwordItem(NETHERITE, 3, -2.35F,
+                    new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair().rarity(Rarity.EPIC)
+            ));
+    public static final RegistryObject<MorphingSwordItem> DEMONIC_LONGSWORD = ITEMS.register("demonic_longsword",
+            () -> new MorphingSwordItem(ArtifactItemTier.GREAT_SOUL, 4, -2.8F,
+                    new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair().rarity(Rarity.EPIC)
+            ));
+    public static final RegistryObject<SwordItem> BROKEN_ANGELIC_GREATSWORD = ITEMS.register("broken_angelic_greatsword",
+            () -> new SwordItem(NETHERITE, 3, -2.35F,
+                    new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair().rarity(Rarity.RARE)
             ));
     public static final RegistryObject<SwordItem> EMERALD_BLADE = ITEMS.register("emerald_blade",
             () -> new SwordItem(Tiers.DIAMOND, 3, -2.4F,
                     new Item.Properties().tab(ARTIFACTS_TAB)
             ));
-
     public static final RegistryObject<SwordItem> IRON_BLADE = ITEMS.register("iron_blade",
             () -> new SwordItem(Tiers.IRON, 3, -2.4F,
                     new Item.Properties().tab(ARTIFACTS_TAB)
+            ));
+    public static final RegistryObject<SwordItem> BLOOD_FLAMBERG = ITEMS.register("blood_flamberg",
+            () -> new SwordItem(ArtifactItemTier.GREAT_SOUL, 4, -2.8F,
+                    new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair().rarity(Rarity.EPIC)
             ));
 
     public static void register(IEventBus eventBus) {

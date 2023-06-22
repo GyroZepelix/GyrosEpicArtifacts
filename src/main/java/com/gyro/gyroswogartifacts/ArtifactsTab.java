@@ -13,6 +13,6 @@ public class ArtifactsTab extends CreativeModeTab {
 
     @Override
     public ItemStack makeIcon() {
-        return new ItemStack(ModItems.SOUL_GREATAXE.get());
+        return new ItemStack(ModItems.DEMONIC_SWORD.get());
     }
 }

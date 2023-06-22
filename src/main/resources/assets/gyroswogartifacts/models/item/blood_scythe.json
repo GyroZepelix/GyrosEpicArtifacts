@@ -1,0 +1,19 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "gyroswogartifacts:item/blood_scythe"
+  },
+  "display": {
+    "thirdperson_righthand":
+
+    {
+
+      "scale": [2, 2, 0.8],
+
+      "translation": [0.0, 5.0, -1.0],
+
+      "rotation": [42.0, 90.0, 0.0]
+
+    }
+  }
+}
