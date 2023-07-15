@@ -13,6 +13,7 @@ import yesman.epicfight.world.item.GreatswordItem;
 
 import static com.gyro.gyroswogartifacts.GyrosWogArtifacts.ARTIFACTS_TAB;
 import static com.gyro.gyroswogartifacts.GyrosWogArtifacts.MODID;
+import static net.minecraft.world.item.Tiers.DIAMOND;
 import static net.minecraft.world.item.Tiers.NETHERITE;
 
 public class ModItems {
@@ -70,6 +71,11 @@ public class ModItems {
     public static final RegistryObject<SwordItem> BLOOD_FLAMBERG = ITEMS.register("blood_flamberg",
             () -> new SwordItem(ArtifactItemTier.GREAT_SOUL, 4, -2.8F,
                     new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair().rarity(Rarity.EPIC)
+            ));
+
+    public static final RegistryObject<SwordItem> SABER = ITEMS.register("saber",
+            () -> new SwordItem(DIAMOND, 4, -2.8F,
+                    new Item.Properties().tab(ARTIFACTS_TAB).setNoRepair().rarity(Rarity.RARE)
             ));
 
     public static void register(IEventBus eventBus) {
