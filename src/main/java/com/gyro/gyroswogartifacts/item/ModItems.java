@@ -1,10 +1,7 @@
 package com.gyro.gyroswogartifacts.item;
 
 import com.gyro.gyroswogartifacts.sound.ModSounds;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -56,6 +53,25 @@ public class ModItems {
             () -> new MorphingSwordItem(ArtifactItemTier.GREAT_SOUL, 4, -2.8F,
                     new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair().rarity(Rarity.EPIC)
             ));
+
+    public static final RegistryObject<MorphingSwordItem> BLACKSTONE_SOUL_SWORD = ITEMS.register("blackstone_soul_sword",
+            () -> new MorphingSwordItem(NETHERITE, 3, -2.35F,
+                    new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair().rarity(Rarity.EPIC)
+            ){
+                @Override
+                public boolean isFoil(ItemStack stack) {
+                    return false;
+                }
+            });
+    public static final RegistryObject<MorphingSwordItem> BLACKSTONE_SOUL_LONGSWORD = ITEMS.register("blackstone_soul_longsword",
+            () -> new MorphingSwordItem(ArtifactItemTier.GREAT_SOUL, 4, -2.8F,
+                    new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair().rarity(Rarity.EPIC)
+            ){
+                @Override
+                public boolean isFoil(ItemStack stack) {
+                    return false;
+                }
+            });
     public static final RegistryObject<SwordItem> BROKEN_ANGELIC_GREATSWORD = ITEMS.register("broken_angelic_greatsword",
             () -> new SwordItem(NETHERITE, 3, -2.35F,
                     new Item.Properties().tab(ARTIFACTS_TAB).fireResistant().setNoRepair().rarity(Rarity.RARE)
@@ -86,10 +102,14 @@ public class ModItems {
     public static void afterItemRegistered() {
         DEMONIC_LONGSWORD.get().setAlternateItems(DEMONIC_SWORD);
         DEMONIC_SWORD.get().setAlternateItems(DEMONIC_LONGSWORD);
+        BLACKSTONE_SOUL_LONGSWORD.get().setAlternateItems(BLACKSTONE_SOUL_SWORD);
+        BLACKSTONE_SOUL_SWORD.get().setAlternateItems(BLACKSTONE_SOUL_LONGSWORD);
     }
 
     public static void afterSoundRegistered() {
         DEMONIC_LONGSWORD.get().setMorphingSoundEvent(ModSounds.DEMONIC_LONGSWORD_SHRING);
         DEMONIC_SWORD.get().setMorphingSoundEvent(ModSounds.DEMONIC_SWORD_GROW);
+        BLACKSTONE_SOUL_LONGSWORD.get().setMorphingSoundEvent(ModSounds.DEMONIC_LONGSWORD_SHRING);
+        BLACKSTONE_SOUL_SWORD.get().setMorphingSoundEvent(ModSounds.DEMONIC_SWORD_GROW);
     }
 }

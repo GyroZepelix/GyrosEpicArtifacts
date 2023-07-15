@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "gyroswogartifacts:item/blackstone_soul_sword"
+  }
+}
